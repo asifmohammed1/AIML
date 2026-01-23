@@ -75,9 +75,10 @@ def merge_dicts(d1, d2):
 # task 1 part 3
 
 # 1. Multiplication table (1 to 10)
-num = 5
+a = int(input('Enter a number for multiplication table : '))
+
 for i in range(1, 11):
-    print(num, "x", i, "=", num * i)
+    print(a, "x", i, "=", a * i)
 
 
 # 2. Sum of all numbers in a list
