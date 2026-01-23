@@ -1,5 +1,5 @@
 #Write a function that takes a list of numbers and returns a new list with only the even numbers from the original list.
-'''def even(input):
+def even(input):
     enum=[]
     for i in input:
         if i%2==0:
@@ -7,55 +7,55 @@
     return enum
 input=[1,2,3,4,5,6,7,8]
 print(even(input))
-output:[2,4,6,8]'''
+#output:[2,4,6,8]
 #Write a function that finds the largest and smallest number in a given list of numbers.
-'''def largest_smallest(input):
+def largest_smallest(input):
     large=max(input)
     small=min(input)
     return large,small
 input=[1,2,3,4,5,67]
 print(largest_smallest(input))
-output:(67,1)'''
+#output:(67,1)
 #Write a program that takes a list of strings and returns a new list with the lengths of each string.
-'''def stLength(input):
+def stLength(input):
     le=[]
     for i in input:
         le.append(len(i))
     return le
 input=["hello","hi","welcome"]    
 print(stLength(input))
-output:[5,2,7]'''
+#output:[5,2,7]
 #Given a list of integers, remove duplicates and return the updated list.
-'''def reDuplicates(input):
+def reDuplicates(input):
     return list(set(input))
 input=[1,2,3,4,4,5,5,6]
 print(reDuplicates(input))
-output:[1,2,3,4,5,6]'''
+#output:[1,2,3,4,5,6]
 #Write a function that accepts a dictionary and returns the key with the highest value.
-'''def highestKey(input):
+def highestKey(input):
     for i in input:
         if input[i]==max(input.values()):
             return i
 di={'a':10,'b':20,'c':5}  
 print(highestKey(di))
-output: b '''
+#output: b 
 #Given a dictionary of students and their grades, write a function that returns the average grade of all students.
-'''def avgGrade(input):
+def avgGrade(input):
     total=sum(input.values())   
     avg=total/len(input)   
     return avg
 input={'stu1':85,'stu2':90,'stu3':78}
 print(avgGrade(input))
-output: 84.33333333333333'''
+#output: 84.33333333333333
 #Write a program that takes a dictionary and adds a new key-value pair to it. The key will be a string, and the value will be a number.
-'''def addKey(input,key,value):
+def addKey(input,key,value):
     input[key]=value
     return input
 input={'a':1,'b':2}
 print(addKey(input,'c',3))
-output:{'a': 1, 'b': 2, 'c': 3}'''
+#output:{'a': 1, 'b': 2, 'c': 3}
 #Write a function that merges two dictionaries. If the dictionaries have common keys, their values should be added together.
-'''def mergeDist(dist1,dist2):
+def mergeDist(dist1,dist2):
     for i in dist2:
         if i in dist1:
             dist1[i]+=dist2[i]
@@ -65,12 +65,12 @@ output:{'a': 1, 'b': 2, 'c': 3}'''
 dist={'a':1,'b':2}
 dist2={'b':3,'c':4}
 print(mergeDist(dist,dist2))
-output:{'a': 1, 'b': 5, 'c': 4}'''
+#output:{'a': 1, 'b': 5, 'c': 4}
 #Write a program using a for loop to print the multiplication table of a given number (1 to 10).
-'''n=int(input("enter"))
+n=int(input("enter"))
 for i in range(1,11):
     print(f"{n}X{i}={n*i}")
-    output:enter2
+   '''output:enter2
             2X1=2
             2X2=4
             2X3=6
@@ -82,31 +82,31 @@ for i in range(1,11):
             2X9=18
             2X10=20'''
 #Use a for loop to iterate through a list of numbers and print the sum of all numbers.
-'''l=[1,2,3,4,5,6,7]
+l=[1,2,3,4,5,6,7]
 s=0
 for i in l:
     s=s+i
 print(s)    
-output:28'''
+#output:28
 #Write a program that uses a for loop to print a right-angled triangle pattern of stars (*).
-'''n=5
+n=5
 for i in range(1,n+1):
     print("*"*i)
-    output:
+  '''output:
     *
     **
     ***
     ****
     *****'''
 #Write a program that uses a for loop to print the Fibonacci sequence up to the 10th term.
-'''n=10
+n=10
 a,b=0,1
 for i in range(n):
     print(a,end=" ")
     a,b=b,a+b
-    output:0 1 1 2 3 5 8 13 21 34 '''
+    output:0 1 1 2 3 5 8 13 21 34 
 #Write a program that checks whether a number is positive, negative, or zero using if-else.
-'''n=int(input("enter a number"))
+n=int(input("enter a number"))
 if n>0:
     print("positive")
 elif n<0:
@@ -116,31 +116,31 @@ else:
 #output:enter a number-5
 # negative'''
 # Write a program that accepts a number and checks whether it is even or odd.
-'''n=int(input("enter a number"))
+n=int(input("enter a number"))
 if n%2==0:
     print("even")
 else:
     print("odd")      
 output:enter a number4
-even'''
+even
 #Create a program that checks whether a given string is a palindrome
-'''s=input("enter a string")
+s=input("enter a string")
 if s==s[::-1]:
     print("palindrome")
 else:
     print("not a palindrome")
 output:enter a string mam
-palindrome '''     
+palindrome     
 #Write a program that takes a year as input and determines whether it is a leap year or not.
-'''year=int(input("enter a year"))
+year=int(input("enter a year"))
 if (year%4==0 and year%100!=0) or (year%400==0):
     print("leap year") 
 else:
     print("not a leap year")  
 output:enter a year 2020
-leap year '''
+leap year 
 #Write a function that takes a number as an argument and returns whether it is a prime number or not.
-'''def prime(n):
+def prime(n):
     if n<=1:
         return "not a prime"
     for i in range(2,int(n**0.5)+1):
@@ -150,9 +150,9 @@ leap year '''
 num=int(input("enter a number"))
 print(prime(num)) 
 output:enter a number5
-prime'''  
+prime
 #Write a function that returns the factorial of a given number.
-'''def factorial(n):
+def factorial(n):
     if n==0 or n==1:
         return 1
     else:
@@ -160,9 +160,9 @@ prime'''
 n=int(input("enter a number"))    
 print(factorial(n))   
 output:enter a number5
-       120'''
+       120
 #Write a function that takes two numbers as arguments and returns their greatest common divisor (GCD).
-'''def gcd(num1,num2):
+def gcd(num1,num2):
     a,b=abs(num1),abs(num2)
     while b!=0:
         a,b=b,a%b
@@ -172,16 +172,16 @@ n2=int(input("enter n2:"))
 print(gcd(n1,n2))
 output:enter n1:48
        enter n2:18
-6'''
+6
 #Create a function that takes a string and returns the reverse of that string.
-'''def reverse(str):
+def reverse(str):
     reverse=str[::-1]
     return reverse
 str="hello"
 print(reverse(str))
-output:olleh'''
+output:olleh
 #Create a Person class with the attributes name, age, and email. Implement a method to display the person’s details.
-'''class person:
+class person:
     def __init__(self,name,age,email):
         self.name=name
         self.age=age
@@ -194,9 +194,9 @@ person1=person("dev",26,"dev@gmail.com")
 person1.display()     
 output:Name:dev
 Age:26
-Email:dev@gmail.com'''
+Email:dev@gmail.com
 #Create a Car class with attributes like make, model, year, and a method display_car_info that prints all the information of the car.
-'''class Car:
+class Car:
     def __init__(self,make,model,year):
         self.make=make
         self.model=model
@@ -209,9 +209,9 @@ Car1=Car("Toyota", "Corolla", 2022)
 Car1.display()   
 output:Make:Toyota
 Model:Corolla
-Year:2022'''
+Year:2022
 #Write a Book class that has a title, author, and price attributes. Implement a method to apply a discount to the book's price.
-'''class Book:
+class Book:
     def __init__(self, title, author, price):
         self.title = title
         self.author = author
@@ -225,9 +225,9 @@ Year:2022'''
 book1 = Book("Python Basics", "John Doe", 500)
 book1.discount(10)
 print(book1.price)
-output:450.0'''
+output:450.0
 #Create a BankAccount class with methods for depositing money, withdrawing money, and checking the balance.
-'''class BankAccount:
+class BankAccount:
     def __init__(self,bankHolder,balance):
         self.bankHolder=bankHolder
         self.balance=balance
@@ -253,7 +253,7 @@ account.Withdraw(300)
 account.CheckBalance()
 output:Deposited Money:1500
 Withdrawn: 300
-Dev Current balance: 1200'''
+Dev Current balance: 1200
 #Problem Statement1:
 '''You are tasked with building a Student Management System to store, manipulate, and analyze student data. The system should be capable of handling a list of students and their associated data, including grades, contact details, and more. You must implement the following features:
 
@@ -317,7 +317,7 @@ Provide the Python code for the Student Management System.
 Include a sample input and output for each of the implemented functionalities.
 Ensure the code is properly documented with comments to explain each function.'''
 #source code
-'''students_data = [
+students_data = [
     {"name": "dev", "age": 22, "email": "dev@mail.com", "grades": [70, 65, 80]},
     {"name": "nan", "age": 19, "email": "nah@mail.com", "grades": [95, 100, 92]}
 ]
@@ -472,7 +472,7 @@ Searching 'dev' for grade 100: Grade not found
 
  Bonus Features
 Is 'nan' a palindrome? True
-Was 2000 a leap year? True    '''
+Was 2000 a leap year? True   
 #Problem Statement2:
 '''You need to build a Movie Rating System that allows users to add movies and rate them, calculate the average rating of all movies, and find the highest-rated movie.
 Part 1: Data Structure Setup (Lists & Dictionaries)
@@ -504,7 +504,7 @@ Provide the Python code for the Movie Rating System.
 Include sample input and output for each of the implemented functionalities.
 Ensure the code is clean and properly documented.'''
 #source code
-'''movie_db = []
+movie_db = []
 
 class Movie:
     def __init__(self, title, director, year, rating):
@@ -613,4 +613,5 @@ Filtering Movies by Year (2010)
 Found: Inception
 
 Bonus Palindrome Check
-Is 'Tenet' a palindrome? True    '''
+
+Is 'Tenet' a palindrome? True    
