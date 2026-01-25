@@ -86,3 +86,35 @@ def filter_movies_by_year(movie_list, year):
 print("\nMovies released in 2014:")
 for m in filter_movies_by_year(Movies, 2014):
     print(m["title"])
+
+
+# Outputs:
+
+# Movies list:
+# Sinners - 4.6
+# Forrest Gump - 4.9
+# Saving Private Ryan - 4.8
+# Fury - 4.7
+
+# Update rating result:
+# Rating updated
+
+# Movies after rating update:
+# Sinners - 4.7
+# Forrest Gump - 4.9
+# Saving Private Ryan - 4.8
+# Fury - 4.7
+
+# Average rating of all movies: 4.775
+
+# Highest rated movie:
+# Forrest Gump - 4.9
+
+# Movies sorted by rating:
+# Forrest Gump - 4.9
+# Saving Private Ryan - 4.8
+# Sinners - 4.7
+# Fury - 4.7
+
+# Movies released in 2014:
+# Fury
