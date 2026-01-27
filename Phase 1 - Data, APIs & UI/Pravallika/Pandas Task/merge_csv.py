@@ -16,6 +16,9 @@ merged_df = pd.merge(
     how="outer"
 )
 
+merged["ALPHA"] = merged["ALPHA"].fillna("")
+merged["BETA"] = merged["BETA"].fillna("")
+
 # Save output
 merged_df.to_csv("merged.csv", index=False)
 
