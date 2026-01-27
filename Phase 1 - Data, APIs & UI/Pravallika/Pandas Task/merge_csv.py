@@ -16,10 +16,6 @@ merged_df = pd.merge(
     how="outer"
 )
 
-# Fill NaN with empty string
-merged_df["ALPHA"] = merged_df["ALPHA"].fillna("")
-merged_df["BETA"] = merged_df["BETA"].fillna("")
-
 # Save output
 merged_df.to_csv("merged.csv", index=False)
 
