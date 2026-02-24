@@ -73,3 +73,31 @@ accuracy = accuracy_score(y_test, y_pred)
 print("\nModel Accuracy:", accuracy)
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+
+# I SHARED MY ACCURACY AND REPORTS JUST BELOW
+
+
+# Class Distribution BEFORE Balancing:
+# sentiment
+# positive    25000
+# negative     2500
+# Name: count, dtype: int64
+
+# Class Distribution AFTER Balancing:
+# sentiment
+# positive    25000
+# negative    25000
+# Name: count, dtype: int64
+
+# Model Accuracy: 0.9803
+
+# Classification Report:
+#               precision    recall  f1-score   support
+
+#     negative       0.96      1.00      0.98      4978
+#     positive       1.00      0.96      0.98      5022
+
+#     accuracy                           0.98     10000
+#    macro avg       0.98      0.98      0.98     10000
+# weighted avg       0.98      0.98      0.98     10000
+
