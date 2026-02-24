@@ -9,7 +9,7 @@ from sklearn.utils import resample
 
 # 2. Load Dataset
 
-df = pd.read_csv("IMDB_Imbalanced.csv")
+df = pd.read_csv("IMDB.csv")
 
 print("Original Class Distribution:")
 print(df['sentiment'].value_counts())
