@@ -66,4 +66,24 @@ y_pred = model.predict(X_test_vec)
 
 print(f"\nFinal Accuracy: {accuracy_score(y_test, y_pred):.4f}")
 print("\nClassification Report:")
+
 print(classification_report(y_test, y_pred))
+
+# output:
+Original Distribution:
+label
+positive    25000
+negative    25000
+Name: count, dtype: int64
+
+Final Accuracy: 0.8608
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.86      0.86      0.86      5000
+    positive       0.86      0.86      0.86      5000
+
+    accuracy                           0.86     10000
+   macro avg       0.86      0.86      0.86     10000
+weighted avg       0.86      0.86      0.86     10000
