@@ -39,4 +39,27 @@ y_pred = model.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred)
 
+
 print("\nModel Accuracy:", accuracy)
+
+
+
+
+
+#output:
+Columns: Index(['password', 'strength'], dtype='object')
+   password strength
+0    123456     weak
+1  password     weak
+2    qwerty     weak
+3    111111     weak
+4    abc123     weak
+
+Class Distribution:
+strength
+strong    70
+weak      60
+medium    59
+Name: count, dtype: int64
+
+Model Accuracy: 0.8809523809523809
