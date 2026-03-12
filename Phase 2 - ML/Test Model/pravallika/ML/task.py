@@ -94,4 +94,11 @@ async def retrain():
 if __name__ == "__main__":
     # Use 127.0.0.1 for local Windows access
     print("Starting server... Access UI at http://127.0.0.1:8000/docs")
+
     uvicorn.run(app, host="127.0.0.1", port=8000)
+
+
+#output:
+--- Model Training Complete ---
+Validation Accuracy: 89.47%
+Balanced Classes: {'weak': 58, 'strong': 58, 'medium': 58}
